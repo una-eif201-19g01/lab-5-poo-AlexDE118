@@ -19,6 +19,17 @@ public:
 	virtual float calcularSalarioBruto() = 0;
 	virtual float calcularCargas() = 0;
 	virtual float calcularSalarioNeto() = 0;
+
+	string getID();
+	int getHoras();
+	float getPrecioHoras();
+	int getAnnosLaborados();
+	void setID(string _id);
+	void setHoras(int _horas);
+	void setPrecioHoras(float _preciosHoras);
+	void setAnnosLaborados(int _annosLaborados);
+
+	string toString();
 };
 
 #endif
