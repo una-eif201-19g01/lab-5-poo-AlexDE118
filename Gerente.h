@@ -3,14 +3,16 @@
 
 #include "Trabajador.h";
 
-class Gerente {
+class Gerente : public Trabajador {
 private:
 	float bono;
 public:
+	Gerente();
+	Gerente(string _id, int horas, float precioHoras, int annosLaborados, float _bono);
 	float getBono();
 	void setBono(float);
 
-	string toString();
+	string toStringGerente();
 };
 
 #endif // !GERENTE_H

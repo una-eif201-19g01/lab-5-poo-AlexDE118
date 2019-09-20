@@ -3,11 +3,12 @@
 
 #include "Trabajador.h"
 
-class Secretaria {
+class Secretaria : public Trabajador {
 private:
 
 public:
-	
+	Secretaria();
+	Secretaria(string id, int horas, float precioHoras, int annoLaborados);
 };
 
 #endif // !SECRETARIA_H

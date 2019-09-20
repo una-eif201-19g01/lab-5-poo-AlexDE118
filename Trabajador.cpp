@@ -1,5 +1,21 @@
 #include "Trabajador.h"
 
+Trabajador::Trabajador()
+{
+	id = "N/A";
+	horas = -1;
+	precioHoras = -1;
+	annosLaborados = -1;
+}
+
+Trabajador::Trabajador(string _id, int _horas, float _precioHoras, int _annosLaborados)
+{
+	id = _id;
+	horas = _horas;
+	precioHoras = _precioHoras;
+	annosLaborados = _annosLaborados;
+}
+
 string Trabajador::getID()
 {
 	return id;
